@@ -1,0 +1,12 @@
+todo:
+
+
+
+
+
+
+
+finished:
+
+
+html basics - cat website up and running
