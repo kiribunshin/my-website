@@ -143,13 +143,13 @@ body {
     transform: scale(1.08);
 }
 
-.container_ai::before {background-image: url(images/gragasarcticops.jpg);}
-.container_backend::before{background-image: url(/images/gragascaskbreaker.jpg);}
-.container_frontend::before{background-image: url(/images/gragasesq.jpg);}
-.container_dbdm::before{background-image: url(/images/gragashighnoon.jpg);}
-.container_ops::before{background-image: url(/images/gragashillbilly.jpg);}
-.container_cloud::before{background-image: url(/images/gragasmusicfan.jpg);}
-.container_desarch::before{background-image: url(/images/gragaswarden.jpg);}
+.container_ai::before {background-image: url("images/gragasarcticops.jpg");}
+.container_backend::before{background-image: url("images/gragascaskbreaker.jpg");}
+.container_frontend::before{background-image: url("images/gragasesq.jpg");}
+.container_dbdm::before{background-image: url("images/gragashighnoon.jpg");}
+.container_ops::before{background-image: url("images/gragashillbilly.jpg");}
+.container_cloud::before{background-image: url("images/gragasmusicfan.jpg");}
+.container_desarch::before{background-image: url("images/gragaswarden.jpg");}
 
 
 hr {
