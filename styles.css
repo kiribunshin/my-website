@@ -1,0 +1,159 @@
+h1 {
+    text-align:center
+}
+
+.introduction {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    background-color: #ccccff;
+}
+
+.selfie-container {
+    text-align: center;
+}
+
+.fields-container {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.fields {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0 auto;
+    list-style: none;
+    max-width: 800px;
+    font-size: x-large;
+}
+
+.fields > .field {
+    position: relative;
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin: 25px 0 10px;
+    padding-left: 0;
+    list-style: none;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: xx-large;
+}
+
+.fields > .field::before {
+    content: "●";
+    position: relative;
+    left: 0;
+    margin-right: 10px;
+    color: #222;
+    font-size: 1.8rem;
+    line-height: 1;
+}
+
+
+.fields .sub-list {
+    list-style: none;
+    margin: 5px 0 15px 50px;
+    padding: 0;
+    text-align: left;
+    font-size: large;
+}
+
+
+.fields .sub-list > li::before {
+    content: "•";
+    color: #555;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    font-size: 1rem;
+}
+
+
+.fields .sub-list .sub-list {
+    margin-left: 25px;
+    font-size: 0.95rem;
+    font-size: large;
+}
+
+
+.fields p {
+    margin: 8px 0px 10px 40px;
+}
+
+.skills_container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 20px; 
+    padding: 20px;
+}
+
+.container_skill {
+    flex: 1 1 350px;
+    min-width: 800px;
+    box-sizing: border-box;
+    position: relative;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 50px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.30);
+    overflow: hidden;
+    color: white;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    text-shadow:
+        -1px -1px 3px rgba(0, 0, 0, 0.9),
+         1px -1px 3px rgba(0, 0, 0, 0.9),
+        -1px  1px 3px rgba(0, 0, 0, 0.9),
+         1px  1px 3px rgba(0, 0, 0, 0.9);
+}
+
+.container_skill:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+.container_skill * {
+  position: relative;
+  z-index: 1;
+}
+
+.container_skill::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.85;
+    z-index: 0;
+    transition: transform 0.6s ease;
+}
+
+.container_skill:hover::before{
+    transform: scale(1.08);
+}
+
+.container_ai::before {background-image: url(https://static.wikia.nocookie.net/leagueoflegends/images/5/55/Gragas_HillbillySkin.jpg/revision/latest/scale-to-width-down/1000?cb=20181021093212);}
+.container_backend::before{background-image: url(https://static.wikia.nocookie.net/leagueoflegends/images/f/f1/Gragas_Gragas%2CEsq.Skin.jpg/revision/latest/scale-to-width-down/1000?cb=20181021114005);}
+.container_frontend::before{background-image: url(https://static.wikia.nocookie.net/leagueoflegends/images/8/85/Gragas_OktoberfestSkin.jpg/revision/latest/scale-to-width-down/1000?cb=20181021040208);}
+.container_dbdm::before{background-image: url(https://static.wikia.nocookie.net/leagueoflegends/images/d/d1/Gragas_HighNoonSkin.jpg/revision/latest/scale-to-width-down/1000?cb=20240307215330);}
+.container_ops::before{background-image: url(https://static.wikia.nocookie.net/leagueoflegends/images/4/4f/Gragas_SpaceGrooveSkin.jpg/revision/latest/scale-to-width-down/1000?cb=20221102032354);}
+.container_cloud::before{background-image: url(https://static.wikia.nocookie.net/leagueoflegends/images/0/07/Gragas_WardenSkin.jpg/revision/latest/scale-to-width-down/1000?cb=20210922225849);}
+.container_desarch::before{background-image: url(https://static.wikia.nocookie.net/leagueoflegends/images/3/33/Gragas_ArcticOpsSkin.jpg/revision/latest/scale-to-width-down/1000?cb=20181021033608);}
+
+
+hr {
+    height: 10px;
+    background-color: white;
+    width: 80%;
+}
