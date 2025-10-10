@@ -2,19 +2,15 @@ h1 {
     text-align:center;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
-    color: white;
 }
 
 .introduction {
-    text-align: center;
+    text-align: left;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
+    flex: 1;
 }
 
-.introduction,
-.Bottom{
-    color: white;
-}
 
 body {
     background-image: url('./images/dark-waves.jpg');
@@ -24,10 +20,14 @@ body {
     background-attachment: fixed;  /* optional: makes it stay still while scrolling */
     margin: 0;                     /* removes default browser margins */
     padding: 0;
+    color: white;
+}
+
+.goals{
+    font-weight: 300;
 }
 
 .animation {
-    display: inline-block;   /* shrink-to-fit */
     border-radius: 50px;
     overflow: hidden;
     box-shadow: 0 4px 12px rgba(0,0,0,0.3);
@@ -40,16 +40,28 @@ body {
     cursor: crosshair;
 }
 
+.container_intro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin: 40px auto;
+    max-width: 1000px;
+}
+
 .container_selfie {
-    display: inline-block; /* or block, doesn’t matter now */
-    padding: 0;
+    flex: 0 0 250px;
+    border-radius: 50px;
+    overflow: hidden;
 }
 
 
 .container_selfie img {
     display: block;
-    width: auto;
+    width: 100%;
     height: auto;
+    border-radius: inherit;
 }
 /* Optional: small responsive tweak */
 @media (max-width: 480px) {
@@ -59,12 +71,6 @@ body {
     }
 }
 
-.selfie_wrapper {
-    display: flex;
-    justify-content: center; /* horizontal centering */
-    width: 100%;             /* full width to allow centering */
-    /* remove min-height and align-items */
-}
 
 .fields-container {
     text-align: center;
@@ -84,21 +90,18 @@ body {
 
 .fields > .field {
     position: relative;
-    font-size: 1.4rem;
+    font-size: 2rem;
     margin: 25px 0 10px;
     padding-left: 0;
     text-align: center;
-    font-family: 'Montserrat', 'Courier New', Courier, monospace;
-    font-weight: 700;
+    font-family: 'JetBrains Mono ExtraBold', 'Courier New', Courier, monospace;
+    list-style: none;
+    text-decoration-line: underline;
+    text-decoration-color: white;
 }
 
 .fields > .field::before {
-    position: relative;
-    left: 0;
-    margin-right: 10px;
-    color: #222;
-    font-size: 1.8rem;
-    line-height: 1;
+    content: "";
 }
 
 
@@ -112,11 +115,11 @@ body {
 
 
 .fields .sub-list > li::before {
-    content: "•";
-    color: #555;
+    content: "•";        /* small solid bullet */
+    color: #fff;          /* white bullet (or your theme color) */
+    margin-left: -1em;    /* aligns with text */
     width: 1em;
-    margin-left: -1em;
-    font-size: 1rem;
+    display: inline-block;
 }
 
 
@@ -125,9 +128,17 @@ body {
     font-weight: 300;
 }
 
+.fields .sub-list .sub-list > li::before {
+    content: "◦";         /* smaller hollow bullet or another variant */
+    color: #aaa;           /* subtle color for hierarchy */
+    margin-left: -1em;
+    width: 1em;
+    display: inline-block;
+}
+
 
 .fields p {
-    margin: 8px 0px 10px 40px;
+    margin: 8px 0 10px 40px;
 }
 
 .skills_container {
@@ -140,7 +151,7 @@ body {
 }
 
 .Bottom {
-    font-family: 'Montserrrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
 }
 
@@ -152,7 +163,6 @@ body {
     max-width: 800px;
     margin: 20px auto;
     padding: 50px 20px;
-    color: white;
     text-shadow:
         -1px -1px 3px rgba(0, 0, 0, 0.9),
          1px -1px 3px rgba(0, 0, 0, 0.9),
@@ -212,16 +222,22 @@ body {
     transform: scale(1.08);
 }
 
-.container_ai::before {background-image: url("./images/gragasarcticops.jpg");}
-.container_backend::before{background-image: url("./images/gragascaskbreaker.jpg");}
-.container_frontend::before{background-image: url("./images/gragasesq.jpg");}
-.container_dbdm::before{background-image: url("./images/gragashighnoon.jpg");}
-.container_ops::before{background-image: url("./images/gragashillbilly.jpg");}
-.container_cloud::before{background-image: url("./images/gragasmusicfan.jpg");}
-.container_desarch::before{background-image: url("./images/gragaswarden.jpg");}
+.container_ai::before {background-image: url("./images/ai_background.jpg");}
+.container_backend::before{background-image: url("./images/backend_background.jpg");}
+.container_frontend::before{background-image: url("./images/frontend_background.jpg");}
+.container_dbdm::before{background-image: url("./images/data_background.jpg");}
+.container_ops::before{background-image: url("./images/devops_background.jpg");}
+.container_cloud::before{background-image: url("./images/cloud_background.jpg");}
+.container_desarch::before{background-image: url("./images/desarch_background.jpg");}
+.container_gamedes::before{background-image: url("./images/gamedes_background.jpg");}
 
 hr {
     height: 10px;
-    background-color: white;
     width: 80%;
+    border: none;
+    background-color: white;
+}
+
+.bold {
+    font-weight: bold;
 }
