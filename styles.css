@@ -2,6 +2,7 @@ h1 {
     text-align:center;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
+    font-size: 3rem;
 }
 
 .introduction {
@@ -25,6 +26,7 @@ body {
 
 .goals{
     font-weight: 300;
+    font-size: 1.8rem;
 }
 
 .animation {
@@ -185,16 +187,39 @@ body {
         width: 70%;
     }
 }
-@media (max-width:480px){
+@media (max-width:768px){
     .fields > .field {
-        font-size: 1.2rem;
+        font-size: 3rem;
     }
     .fields .sub-list li {
-        font-size: 0.9rem;
+        font-size:1.4rem;
     }
     .container_skill {
         padding: 20px 10px;
         border-radius: 25px;
+    }
+    .container_intro {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .introduction {
+        text-align: center;
+        font-size: 1.3rem;
+        padding: 0 15px; /* add side padding so text doesn’t hug edges */
+    }
+
+    .container_selfie {
+        flex: 0 0 auto;
+        width: 60%;
+        max-width: 250px;
+        margin: 0 auto;
+    }
+
+    .container_selfie img {
+        width: 100%;
+        height: auto;
     }
 }
 
