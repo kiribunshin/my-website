@@ -9,6 +9,15 @@ This is the source code for my personal corner of the internet. It’s built to 
 
 ---
 
+### 📂 Directory Structure
+```bash
+.
+├── images/          # All visual assets and screenshots
+├── index.html       # Main structure and content
+├── styles.css       # Custom styling and responsiveness
+└── README.md        # You are here
+```
+
 ### 🛠 Tech Stack
 * **Frontend:** HTML5, CSS3
 * **Deployment:** GitHub Pages
