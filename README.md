@@ -3,7 +3,7 @@
 [![GitHub stars](https://img.shields.io/github/stars/kiribunshin/my-website?style=flat-square&color=ffd700)](https://github.com/kiribunshin/my-website/stargazers)
 [![Go to Website](https://img.shields.io/badge/Visit-Live_Site-0078d4?style=flat-square&logo=browser&logoColor=white)](https://kiribunshin.github.io/my-website/)
 
-![Website Preview](./pictures/preview.png)
+![Website Preview](./images/preview.png)
 
 This is the source code for my personal corner of the internet. It’s built to be fast, minimal, and straight to the point.
 
